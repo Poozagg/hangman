@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import words from './wordList.json'
 import './App.css'
+import HangmanDrawing from './Components/HangmanDrawing'
+import HangmanWord from './Components/HangmanWord'
+import Keyboard from './Components/Keyboard'
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
@@ -16,9 +19,12 @@ function App() {
   return (
     <div className='container'>
       <div className='displayWonOrLost'>
-        <h5> 🎉🏆 🏆 You won!!!🏆 🏆 🎉</h5>
-        <h5> You Lost! 👎🏽 👎🏽 👎🏽  </h5>
+        <h6> 🎉🏆 🏆 You won!!!🏆 🏆 🎉</h6>
+        <h6> You Lost! 👎🏽 👎🏽 👎🏽  </h6>
       </div>
+      <HangmanDrawing />
+      <HangmanWord />
+      <Keyboard />
     </div>
   )
 }
