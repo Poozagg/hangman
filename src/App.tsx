@@ -14,9 +14,12 @@ function App() {
   const [guessedLetters, setGuessedLetters] = useState<string[]>([])
   console.log(wordToGuess)
   return (
-    <main>
-      <h1> hi </h1>
-    </main>
+    <div className='container'>
+      <div className='displayWonOrLost'>
+        <h5> 🎉🏆 🏆 You won!!!🏆 🏆 🎉</h5>
+        <h5> You Lost! 👎🏽 👎🏽 👎🏽  </h5>
+      </div>
+    </div>
   )
 }
 
