@@ -1,13 +1,16 @@
 import { useState } from 'react'
-
+import words from './wordList.json'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [wordToGuess, setWordToGuess] = useState(() => {
+    return words[Math.floor(Math.random() * words.length)]
+  }
+    )
+  console.log(wordToGuess)
   return (
     <main>
-      <h1> hello </h1>
+      <h1> hi </h1>
     </main>
   )
 }
