@@ -101,9 +101,14 @@
 }
 .letters--of--word--to--guess {
   display: flex;
+  direction: row ;
   gap: 0.5rem;
   margin-top: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: monospace;
+}
+.letters {
+  border-bottom: black 0.2rem solid;
 }
