@@ -35,7 +35,7 @@
 }
 .vertical--bar {
   width: 0.4rem;
-  height: 25rem;
+  height: 20rem;
   background-color: black;
   margin-left: 10rem;
 }
@@ -83,19 +83,27 @@
 .Hangman--left--leg {
   position: absolute;
   top: 12.5rem;
-  right: -0.9rem;
+  right: -1.1rem;
   width: 4rem;
   height: 0.4rem;
   background-color: black;
-  transform: rotate(315deg);
+  transform: rotate(305deg);
 }
 .Hangman--right--leg {
   position: absolute;
   top: 11rem;
-  right: -4.3rem;
+  right: -4.5rem;
   width: 4rem;
   height: 0.4rem;
   background-color: black;
-  transform: rotate(-315deg);
+  transform: rotate(-305deg);
   transform-origin: left top;
+}
+.letters--of--word--to--guess {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 5rem;
 }
