@@ -7,6 +7,11 @@ function App() {
     return words[Math.floor(Math.random() * words.length)]
   }
     )
+
+    // guessed letters to be stored in an array which is empty to
+    // begin with.
+    // --! note this array will be an array of strings !--
+  const [guessedLetters, setGuessedLetters] = useState<string[]>([])
   console.log(wordToGuess)
   return (
     <main>
