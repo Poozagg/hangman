@@ -7,11 +7,95 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* align-items: center; */
+  align-items: center;
 }
 .displayWonOrLost{
   font-size: 2rem;
   font-weight: bold;
   color: #f00;
   /* text-align: center; */
+}
+.HangmanDrawing {
+  position: relative;
+}
+.top--bar {
+  width: 10rem;
+  background-color: black;
+  height: 0.4rem;
+  margin-left: 10rem;
+}
+.overhang--bar {
+  width: 0.4rem;
+  height: 2rem;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  /* margin-left: 200rem; */
+}
+.vertical--bar {
+  width: 0.4rem;
+  height: 25rem;
+  background-color: black;
+  margin-left: 10rem;
+}
+.bottom--bar {
+  width: 20rem;
+  background-color: black;
+  height: 0.4rem;
+}
+.Hangman--head {
+  position: absolute;
+  top: 2rem;
+  right: -2.1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 0.4rem solid black;
+}
+.Hangman--body {
+  position: absolute;
+  top: 5.5rem;
+  right: -0.5rem;
+  width: 0.4rem;
+  height: 6rem;
+  background-color: black;
+}
+.Hangman--left--arm {
+  position: absolute;
+  top: 6.5rem;
+  right: -0.8rem;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: black;
+  transform: rotate(35deg);
+}
+.Hangman--right--arm {
+  position: absolute;
+  top: 7.8rem;
+  right: -4rem;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: black;
+  transform: rotate(-35deg);
+  transform-origin: left top;
+}
+.Hangman--left--leg {
+  position: absolute;
+  top: 12.5rem;
+  right: -0.9rem;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: black;
+  transform: rotate(315deg);
+}
+.Hangman--right--leg {
+  position: absolute;
+  top: 11rem;
+  right: -4.3rem;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: black;
+  transform: rotate(-315deg);
+  transform-origin: left top;
 }
