@@ -7,11 +7,40 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* align-items: center; */
+  align-items: center;
 }
 .displayWonOrLost{
   font-size: 2rem;
   font-weight: bold;
   color: #f00;
   /* text-align: center; */
+}
+.HangmanDrawing {
+  position: relative;
+}
+.top--bar {
+  width: 10rem;
+  background-color: black;
+  height: 0.5rem;
+  margin-left: 10rem;
+}
+.overhang--bar {
+  width: 0.5rem;
+  height: 2rem;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  /* margin-left: 200rem; */
+}
+.vertical--bar {
+  width: 0.5rem;
+  height: 20rem;
+  background-color: black;
+  margin-left: 10rem;
+}
+.bottom--bar {
+  width: 20rem;
+  background-color: black;
+  height: 0.5rem;
 }

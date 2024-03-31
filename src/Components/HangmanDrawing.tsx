@@ -1,7 +1,10 @@
 export default function HangmanDrawing() {
   return (
-    <div>
-      <h3> drawing goes here </h3>
+    <div className="HangmanDrawing">
+      <div className="overhang--bar"></div>
+      <div className="top--bar"></div>
+      <div className="vertical--bar"></div>
+      <div className="bottom--bar"></div>
     </div>
   )
 }
