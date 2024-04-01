@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='container'>
       <div className='displayWonOrLost'>
-        <h6> 🎉🏆 🏆 You won!!!🏆 🏆 🎉</h6>
+        {/* <h6> 🎉🏆 🏆 You won!!!🏆 🏆 🎉</h6> */}
         <h6> You Lost! 👎🏽 👎🏽 👎🏽  </h6>
       </div>
       <HangmanDrawing />

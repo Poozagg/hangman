@@ -102,7 +102,7 @@
 .letters--of--word--to--guess {
   display: flex;
   direction: row ;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 1rem;
   font-weight: bold;
   text-transform: uppercase;
